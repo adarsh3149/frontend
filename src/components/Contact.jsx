@@ -33,7 +33,7 @@ function Contact() {
     e.preventDefault();
     console.log(contact);
     try {
-      const response = await fetch(`http://localhost:5000/form/contact`, {
+      const response = await fetch(`https://backend-1-tgav.onrender.com/form/contact`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
