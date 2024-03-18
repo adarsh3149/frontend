@@ -8,6 +8,7 @@ import {About} from './components/About'
 import Services from './components/Services'
 import Navbar from './components/Navbar'
 import { Logout } from './components/Logout'
+import PaymentSuccess from './components/PaymentSuccess'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Route path='/logout' element={<Logout/>}/>
       <Route path='/register' element={<Signup/>}/>
       <Route path='/services' element={<Services/>}/>
+      <Route path='/paymentsuccess' element = {<PaymentSuccess/>}/>
     </Routes>
     </>
   )
