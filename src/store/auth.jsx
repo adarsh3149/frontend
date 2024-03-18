@@ -28,7 +28,7 @@ export const AuthProvider = ({ children }) => {
 
   const userAuthentication = async () => {
     try {
-      const response = await fetch("http://localhost:8000/auth/user", {
+      const response = await fetch("https://backend-1-tgav.onrender.com/auth/user", {
         method: "GET",
         
         headers: {
@@ -47,7 +47,7 @@ export const AuthProvider = ({ children }) => {
 
   const getServices = async () => {
     try {
-      const response = await fetch(`http://localhost:8000/api/service`, {
+      const response = await fetch(`https://backend-1-tgav.onrender.com/api/service`, {
         method: "GET",
       });
       if (response.ok) {
